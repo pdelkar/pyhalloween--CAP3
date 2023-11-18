@@ -1,0 +1,11 @@
+# pyhalloween--CAP3
+Some of the resources and concepts used to develop this test code:
+1.	Python's unittest Framework - The unittest module is a built-in Python module that provides a framework for creating and running unit tests. It is based on the xUnit architecture, an architectural pattern for creating automated test cases 1.
+2.	Test Cases - The basic building block of testing with unittest are test cases, which are represented by unittest.TestCase instances. Test cases are individual scenarios that must be set up and checked for correctness. You create your own test cases by writing subclasses of TestCase or FunctionTestCase 1.
+3.	Test methods - The test methods are functions that perform the actual testing. Their names must start with 'test' so that unittest can automatically identify them as test methods. In your code, test_yellow_movement, test_red_movement and test_handle_bullets are test methods 1.
+4.	SetUp and TearDown - These are special methods provided by the unittest.TestCase class. The setUp method is used to set up any objects or states that will be used by the test methods. The tearDown method is used to clean up any resources or states that were used during the tests 1.
+5.	Assertions - Assertions are used to check for conditions that should hold true in the code being tested. If the condition is not met, the test fails. In your code, self.assertEqual(yellow.x, 95) is an assertion that checks if the x-coordinate of the yellow ghost is 95 after movement 1.
+6.	Pygame - Pygame is a set of Python modules designed for writing video games. It provides functionalities for creating windows, handling events, drawing shapes and images, and handling audio amongst others 10.
+7.	Pygame Rect - The pygame.Rect object is a rectangular area in pixels. It is used to store and manipulate rectangular areas in Pygame. In your code, pygame.Rect(100, 300, pygame_holloween.GHOST_WIDTH, pygame_holloween.GHOST_HEIGHT) is used to create a rectangular area representing a ghost 10.
+8.	unittest.main() - This function is used to run the tests when the module is run as a script. It uses a TestLoader to discover test methods and a TextTestRunner to run the discovered tests 1.
+
